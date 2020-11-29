@@ -30,7 +30,7 @@ const App = () => {
   }
 
   if (!auth0.isAuthenticated && !hasError) {
-    auth0.loginWithRedirect({});
+    auth0.loginWithRedirect();
   }
 
   if (!auth0.isAuthenticated && hasError) {

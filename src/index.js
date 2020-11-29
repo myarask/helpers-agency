@@ -83,7 +83,7 @@ ReactDOM.render(
   <Auth0Provider
     domain={config.domain}
     clientId={config.clientId}
-    redirect_uri={window.location.origin}
+    redirectUri={window.location.origin}
   >
     <AuthorizedApolloProvider>
       <CssBaseline />
