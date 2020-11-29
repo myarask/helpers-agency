@@ -11,9 +11,9 @@ import {
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 import { Link } from 'react-router-dom';
+import { useAuth0 } from '@auth0/auth0-react';
 import paths from '../constants/paths';
 import { useAgency } from './Agency';
-import { useAuth0 } from '../react-auth0-spa';
 
 const useStyles = makeStyles((theme) => ({
   formControl: {
