@@ -13,14 +13,13 @@ import { Auth0Provider, useAuth0 } from '@auth0/auth0-react';
 
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import config from './auth_config.json';
 
 const AuthorizedApolloProvider = ({ children }) => {
   const { getAccessTokenSilently } = useAuth0();
 
   const request = async (operation) => {
     const token = await getAccessTokenSilently({
-      audience: config.audience,
+      audience: process.env.REACT_APP_AUTH_AUDIENCE,
     });
 
     operation.setContext({
@@ -81,8 +80,8 @@ const AuthorizedApolloProvider = ({ children }) => {
 
 ReactDOM.render(
   <Auth0Provider
-    domain={config.domain}
-    clientId={config.clientId}
+    domain={process.env.REACT_APP_AUTH_DOMAIN}
+    clientId={process.env.REACT_APP_AUTH_CLIENT_ID}
     redirectUri={window.location.origin}
   >
     <AuthorizedApolloProvider>
