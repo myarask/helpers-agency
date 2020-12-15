@@ -3,7 +3,6 @@ export { default as ClientCard } from './ClientCard';
 export { default as DesktopSideNav } from './DesktopSideNav';
 export { default as DeviceSwitch } from './DeviceSwitch';
 export { default as Layout } from './Layout/Layout';
-export { default as Loading } from './Loading';
 export { default as NavBar } from './NavBar';
 export { default as ServiceIcon } from './ServiceIcon';
 export { default as ServiceList } from './ServiceList';

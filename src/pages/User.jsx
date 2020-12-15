@@ -13,9 +13,9 @@ import {
   DialogContentText,
   DialogActions,
   Button,
+  LinearProgress,
 } from '@material-ui/core';
 import { useQuery, useMutation } from '@apollo/react-hooks';
-import { Loading } from 'components';
 import history from 'utils/history';
 
 const GET_AGENCY_USER = gql`
@@ -57,7 +57,7 @@ const Users = () => {
 
   return (
     <>
-      {loading && <Loading />}
+      {loading && <LinearProgress />}
       {data && (
         <Card>
           <CardHeader title="User" />
