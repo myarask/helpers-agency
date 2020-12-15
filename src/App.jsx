@@ -1,6 +1,6 @@
 import React from 'react';
 import { Router, Switch, Route, Redirect } from 'react-router-dom';
-import { Layout, ThemeProvider, Loading } from 'components';
+import { Layout, ThemeProvider } from 'components';
 import NewUser from 'pages/NewUser';
 import Home from 'pages/Home';
 import User from 'pages/User';
@@ -20,13 +20,14 @@ import {
 import paths from 'constants/paths';
 import history from 'utils/history';
 import { useAuth0 } from '@auth0/auth0-react';
+import { LinearProgress } from '@material-ui/core';
 
 const App = () => {
   const auth0 = useAuth0();
   const hasError = window.location.search.includes('error=');
 
   if (auth0.isLoading) {
-    return <Loading />;
+    return <LinearProgress />;
   }
 
   if (!auth0.isAuthenticated && !hasError) {

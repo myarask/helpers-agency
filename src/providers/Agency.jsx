@@ -1,6 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
 import gql from 'graphql-tag';
 import { useQuery } from '@apollo/react-hooks';
+import { LinearProgress } from '@material-ui/core';
 
 const Agency = React.createContext({});
 const useAgency = () => useContext(Agency);
@@ -29,7 +30,7 @@ const AgencyProvider = ({ children }) => {
     []
   );
 
-  if (loading) return 'Loading Agency Data!';
+  if (loading) return <LinearProgress />;
   if (!agencyId) return null;
 
   const value = {
