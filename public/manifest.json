@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Helpers",
+  "name": "Helpers for Agencies",
+  "categories": ["home care", "personnal care"],
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,8 +9,30 @@
       "type": "image/x-icon"
     }
   ],
+  "screenshots": [
+    {
+      "src": "screenshot1.png",
+      "sizes": "1080×1920",
+      "type": "image/png"
+    },
+    {
+      "src": "screenshot2.png",
+      "sizes": "1080×1920",
+      "type": "image/png"
+    },
+    {
+      "src": "screenshot3.png",
+      "sizes": "1080×1920",
+      "type": "image/png"
+    },
+    {
+      "src": "screenshot4.png",
+      "sizes": "1080×1920",
+      "type": "image/png"
+    }
+  ],
   "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
+  "display": "fullscreen",
+  "theme_color": "#12B3B3",
   "background_color": "#ffffff"
 }
