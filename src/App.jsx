@@ -39,7 +39,7 @@ const App = () => {
   }
 
   return (
-    <ThemeProvider>
+    <>
       <AgencyProvider>
         <IdentityProvider>
           <OngoingVisitProvider>
@@ -67,8 +67,10 @@ const App = () => {
           </OngoingVisitProvider>
         </IdentityProvider>
       </AgencyProvider>
-    </ThemeProvider>
+    </>
   );
 };
 
-export default App;
+const StyledApp = () => <ThemeProvider><App /></ThemeProvider>
+
+export default StyledApp;
