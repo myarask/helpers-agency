@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import gql from 'graphql-tag';
 import { useParams } from 'react-router-dom';
 import {
   Box,
@@ -15,7 +14,7 @@ import {
   Button,
   LinearProgress,
 } from '@material-ui/core';
-import { useQuery, useMutation } from '@apollo/react-hooks';
+import { useQuery, useMutation, gql } from '@apollo/client';
 import history from 'utils/history';
 
 const GET_AGENCY_USER = gql`
