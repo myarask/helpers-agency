@@ -1,7 +1,6 @@
 import React from 'react';
-import { useQuery, useMutation } from '@apollo/react-hooks';
+import { useQuery, useMutation, gql } from '@apollo/client';
 import { useParams } from 'react-router-dom';
-import gql from 'graphql-tag';
 import { useIdentity } from 'providers/Identity';
 import { useAgency } from 'providers/Agency';
 import { DeviceSwitch } from 'components';

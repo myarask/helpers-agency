@@ -1,6 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react';
-import gql from 'graphql-tag';
-import { useQuery } from '@apollo/react-hooks';
+import { useQuery, gql } from '@apollo/client';
 import { LinearProgress } from '@material-ui/core';
 
 const Agency = React.createContext({});
