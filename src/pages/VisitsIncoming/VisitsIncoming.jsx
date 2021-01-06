@@ -1,6 +1,5 @@
 import React from 'react';
-import { useQuery } from '@apollo/react-hooks';
-import gql from 'graphql-tag';
+import { useQuery, gql } from '@apollo/client';
 import { DeviceSwitch } from '../../components';
 import { useAgency } from '../../providers/Agency';
 import Mobile from './Mobile';

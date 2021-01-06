@@ -6,8 +6,7 @@ import {
   Button,
   LinearProgress,
 } from '@material-ui/core';
-import gql from 'graphql-tag';
-import { useMutation } from '@apollo/react-hooks';
+import { useMutation, gql } from '@apollo/client';
 import { Formik, Field, Form } from 'formik';
 import history from 'utils/history';
 import paths from 'constants/paths';

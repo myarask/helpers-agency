@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import gql from 'graphql-tag';
 import { Link } from 'react-router-dom';
 import {
   Box,
@@ -17,7 +16,7 @@ import {
   TableCell,
   Typography,
 } from '@material-ui/core';
-import { useQuery, useMutation } from '@apollo/react-hooks';
+import { useQuery, useMutation, gql } from '@apollo/client';
 import PersonAddIcon from '@material-ui/icons/PersonAdd';
 import paths from 'constants/paths';
 import { useAgency } from '../providers/Agency';
